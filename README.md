@@ -1,11 +1,11 @@
-About parmoo
-============
+About parmoo-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/parmoo-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/parmoo/parmoo
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/parmoo-feedstock/blob/main/LICENSE.txt)
 
 Summary: Python library for parallel multiobjective simulation optimization
 
