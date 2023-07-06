@@ -16,15 +16,15 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.8
     - pip
   run:
-    - python >=3.6
+    - python >=3.8
     - numpy
-    - scipy
+    - scipy>=1.10.0
     - pydoe
     - pandas
-    - libensemble
+    - libensemble==0.9.3
     - plotly
     - dash
     - python-kaleido
