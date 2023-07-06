@@ -144,4 +144,5 @@ Feedstock Maintainers
 =====================
 
 * [@thchang](https://github.com/thchang/)
+* [@wildsm](https://github.com/wildsm/)
 
