@@ -21,10 +21,10 @@ requirements:
   run:
     - python >=3.8
     - numpy
-    - scipy>=1.10.0
+    - scipy >=1.10.0
     - pydoe
     - pandas
-    - libensemble==0.9.3
+    - libensemble ==0.9.3
     - plotly
     - dash
     - python-kaleido
