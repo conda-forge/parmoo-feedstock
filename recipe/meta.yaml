@@ -1,5 +1,5 @@
 {% set name = "parmoo" %}
-{% set version = "0.3.0" %}
+{% set version = "0.3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/parmoo-{{ version }}.tar.gz
-  sha256: 67ee5d9b7edf2494b1123a0040c4d3e34c064851b535372a4508482d49f417a4
+  sha256: da33decc971ededcc3a35297fdc2a92c589a6c9a5b5ac4f3ebc0feb3c15139ff
 
 build:
   noarch: python
