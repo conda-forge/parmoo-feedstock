@@ -20,14 +20,14 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - numpy
+    - jax[cpu] >=0.4.13
+    - numpy >=1.24.0
     - scipy >=1.10.0
-    - pydoe
-    - pandas
-    - libensemble ==0.9.3
-    - plotly
-    - dash
-    - python-kaleido
+    - pandas >=0.3.0
+    - libensemble >=1.4.2
+    - plotly >=5.20.0
+    - dash >=2.9.3
+    - python-kaleido >=0.2.1
 
 test:
   imports:
