@@ -6,20 +6,20 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/parmoo-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/parmoo-{{ version }}.tar.gz
   sha256: 05fd146862af5d6eeae5c2ee214a7ede9091d791e2cfe2004439456cc1bc71b2
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - jax[cpu] >=0.4.13
     - numpy >=1.24.0
     - scipy >=1.10.0
@@ -36,6 +36,7 @@ test:
     - py.test --pyargs parmoo.tests.unit_tests
   requires:
     - pytest
+    - python {{ python_min }}
 
 about:
   home: https://github.com/parmoo/parmoo
