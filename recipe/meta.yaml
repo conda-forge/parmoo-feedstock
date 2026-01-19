@@ -35,7 +35,7 @@ test:
   commands:
     - py.test --pyargs parmoo.tests.unit_tests
   requires:
-    - esss::chromium
+    - chromedriver-binary
     - pytest
     - python {{ python_min }}
 
