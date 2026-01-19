@@ -35,7 +35,7 @@ test:
   commands:
     - py.test --pyargs parmoo.tests.unit_tests
   requires:
-    - chromedriver-binary
+    - anaconda::chromedriver-binary
     - pytest
     - python {{ python_min }}
 
