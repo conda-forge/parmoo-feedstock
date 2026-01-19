@@ -33,8 +33,7 @@ test:
   imports:
     - parmoo
   commands:
-    - plotly_get_chrome
-    - py.test --pyargs parmoo.tests.unit_tests
+    - plotly_get_chrome && py.test --pyargs parmoo.tests.unit_tests
   requires:
     - pytest
     - python {{ python_min }}
