@@ -18,7 +18,6 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
-    - python-chromedriver-binary
   run:
     - python >={{ python_min }}
     - jax[cpu] >=0.4.13
@@ -36,6 +35,7 @@ test:
   commands:
     - py.test --pyargs parmoo.tests.unit_tests
   requires:
+    - chromium
     - pytest
     - python {{ python_min }}
 
