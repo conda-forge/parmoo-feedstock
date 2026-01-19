@@ -18,6 +18,7 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
+    - python-chromedriver-binary
   run:
     - python >={{ python_min }}
     - jax[cpu] >=0.4.13
@@ -33,7 +34,7 @@ test:
   imports:
     - parmoo
   commands:
-    - plotly_get_chrome && py.test --pyargs parmoo.tests.unit_tests
+    - py.test --pyargs parmoo.tests.unit_tests
   requires:
     - pytest
     - python {{ python_min }}
