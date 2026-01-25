@@ -33,7 +33,7 @@ test:
   imports:
     - parmoo
   commands:
-    - py.test --pyargs parmoo.tests.unit_tests
+    - py.test -m "not requires_chrome" --pyargs parmoo.tests.unit_tests
   requires:
     - pytest
     - python {{ python_min }}
